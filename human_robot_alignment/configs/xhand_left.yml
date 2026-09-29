@@ -1,0 +1,12 @@
+retargeting:
+  type: vector
+  urdf_path: left/urdf/xhand_left.urdf
+  target_joint_names: null
+  target_origin_link_names: [left_hand_link, left_hand_link, left_hand_link, left_hand_link, left_hand_link]
+  target_task_link_names: [left_hand_thumb_rota_tip, left_hand_index_rota_tip, left_hand_mid_tip, left_hand_ring_tip, left_hand_pinky_tip]
+  target_link_human_indices: [[0, 0, 0, 0, 0], [4, 9, 14, 19, 24]]
+  scaling_factor: 1.2
+  normal_delta: 0.008
+  huber_delta: 0.02
+  add_dummy_free_joint: false
+  low_pass_alpha: 0.5
