@@ -61,6 +61,15 @@ DexRoam/
 │   ├── Ego_Wholebody_Mocap_Reference.md      # Architecture, configuration, and troubleshooting
 │   └── Human_Robot_Alignment_Reference.md    # Retargeting and resampling
 ├── ego_wholebody_mocap/                      # Real-time capture and HDF5 recording
+│   ├── devices/                              # Quest/WebXR streaming and ZED camera interfaces
+│   ├── gestures/                             # Pinch recognition and capture state machine
+│   ├── runtime/                              # Runtime orchestration package
+│   ├── storage/                              # Episode management, HDF5 schema, and asynchronous writing
+│   ├── ui/                                   # In-headset HUD and runtime display state
+│   ├── __main__.py                           # `python -m ego_wholebody_mocap` entry point
+│   ├── config.py                             # Capture, streaming, and output configuration
+│   ├── main.py                               # Main capture-loop orchestration
+│   └── paths.py                              # Project and episode output-path helpers
 ├── human_robot_alignment/
 │   ├── dexroam_alignment/                    # Alignment pipeline and CLI
 │   ├── configs/                              # XHand retargeting configuration
